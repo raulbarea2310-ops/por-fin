@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes de PC</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #58a6ff;
+        }
+        section {
+            background-color: #161b22;
+            border-left: 5px solid #1f6feb;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #1f6feb;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #0d1117;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        li:hover {
+            transform: scale(1.02);
+            background-color: #21262d;
+        }
+        li img {
+            width: 150px;
+            margin-right: 15px;
+            border-radius: 5px;
+            border: 1px solid #1f6feb;
+        }
+        li a {
+            color: #58a6ff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #1f6feb;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #1f6feb;
+            color: #0d1117;
+        }
+        tr:nth-child(even) {
+            background-color: #21262d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Componentes de PC</h1>
+
+    <!-- Fuente de Alimentación -->
+    <section id="fuente">
+        <h2>Fuente de Alimentación</h2>
+        <ul>
+            <li>
+                <img src="img/corsair_rm750x.jpg" alt="Corsair RM750x">
+                <a href="#">Corsair RM750x 750W</a>
+            </li>
+            <li>
+                <img src="img/nzxt_c750.jpg" alt="NZXT C750">
+                <a href="#">NZXT C750 750W</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>Corsair RM750x</td>
+                <td>Silenciosa, modular, alta eficiencia</td>
+                <td>Precio más alto</td>
+            </tr>
+            <tr>
+                <td>NZXT C750</td>
+                <td>Modular, buena disponibilidad</td>
+                <td>Ventilador algo ruidoso</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Placa Base -->
+    <section id="placa-base">
+        <h2>Placa Base</h2>
+        <ul>
+            <li>
+                <img src="img/asus_b550m.jpg" alt="ASUS B550M">
+                <a href="#">ASUS B550M-PLUS</a>
+            </li>
+            <li>
+                <img src="img/asus_b560m.jpg" alt="ASUS B560M">
+                <a href="#">ASUS B560M-K</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>ASUS B550M-PLUS</td>
+                <td>Compatible con Ryzen 3000/5000, PCIe 4.0</td>
+                <td>No Intel</td>
+            </tr>
+            <tr>
+                <td>ASUS B560M-K</td>
+                <td>Compatible Intel 10/11 Gen, económica</td>
+                <td>No soporta overclock</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Tarjeta Gráfica -->
+    <section id="grafica">
+        <h2>Tarjeta Gráfica</h2>
+        <ul>
+            <li>
+                <img src="img/msi_rtx3060.jpg" alt="MSI RTX 3060">
+                <a href="#">MSI RTX 3060 GAMING Z</a>
+            </li>
+            <li>
+                <img src="img/asus_rtx3060.jpg" alt="ASUS RTX 3060">
+                <a href="#">ASUS Dual RTX 3060</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>MSI RTX 3060</td>
+                <td>Buen overclock, refrigeración eficiente</td>
+                <td>Grande, ocupa espacio</td>
+            </tr>
+            <tr>
+                <td>ASUS RTX 3060</td>
+                <td>Compacta, buena relación calidad/precio</td>
+                <td>Refrigeración menos eficiente</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- RAM -->
+    <section id="ram">
+        <h2>RAM</h2>
+        <ul>
+            <li>
+                <img src="img/corsair_ram.jpg" alt="Corsair RAM">
+                <a href="#">Corsair Vengeance LPX 16GB</a>
+            </li>
+            <li>
+                <img src="img/rs_ram.jpg" alt="RS RAM">
+                <a href="#">RS Online 16GB</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>Corsair Vengeance</td>
+                <td>Disipador de calor, compatibilidad amplia</td>
+                <td>Precio algo mayor</td>
+            </tr>
+            <tr>
+                <td>RS Online</td>
+                <td>Económica, fácil de conseguir</td>
+                <td>Menos información sobre latencias</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Ventilador / Cooler -->
+    <section id="cooler">
+        <h2>Ventilador / Cooler</h2>
+        <ul>
+            <li>
+                <img src="img/hyper212.jpg" alt="Cooler Master Hyper 212">
+                <a href="#">Cooler Master Hyper 212</a>
+            </li>
+            <li>
+                <img src="img/noctua_nh.jpg" alt="Noctua NH-U12S">
+                <a href="#">Noctua NH-U12S</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>Cooler Master Hyper 212</td>
+                <td>Precio accesible, buen rendimiento</td>
+                <td>Algo ruidoso a altas RPM</td>
+            </tr>
+            <tr>
+                <td>Noctua NH-U12S</td>
+                <td>Silencioso, gran eficiencia</td>
+                <td>Precio más alto</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Tarjeta de Audio -->
+    <section id="audio">
+        <h2>Tarjeta de Audio</h2>
+        <ul>
+            <li>
+                <img src="img/scarlett2i2.jpg" alt="Focusrite Scarlett 2i2">
+                <a href="#">Focusrite Scarlett 2i2</a>
+            </li>
+            <li>
+                <img src="img/evo4.jpg" alt="Audient EVO 4">
+                <a href="#">Audient EVO 4</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>Scarlett 2i2</td>
+                <td>Muy popular, fácil de usar</td>
+                <td>Pocas entradas</td>
+            </tr>
+            <tr>
+                <td>Audient EVO 4</td>
+                <td>Automix inteligente, precio accesible</td>
+                <td>No tan robusta</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- SSD / Disco Duro -->
+    <section id="disco">
+        <h2>SSD / Disco Duro</h2>
+        <ul>
+            <li>
+                <img src="img/sandisk_m2.jpg" alt="SanDisk M.2">
+                <a href="#">SanDisk Extreme M.2 1TB</a>
+            </li>
+            <li>
+                <img src="img/sandisk_portable.jpg" alt="SanDisk Portable">
+                <a href="#">SanDisk Extreme Portable SSD 1TB</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>SanDisk M.2 NVMe</td>
+                <td>Velocidad alta, ideal para OS y juegos</td>
+                <td>Precio más alto</td>
+            </tr>
+            <tr>
+                <td>SanDisk Portable</td>
+                <td>Portátil, resistente</td>
+                <td>Velocidad menor que NVMe interno</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Caja -->
+    <section id="caja">
+        <h2>Caja</h2>
+        <ul>
+            <li>
+                <img src="img/nzxt_h6.jpg" alt="NZXT H6 Flow">
+                <a href="#">NZXT H6 Flow RGB</a>
+            </li>
+            <li>
+                <img src="img/lianli_o11d.jpg" alt="Lian Li O11D">
+                <a href="#">Lian Li O11D EVO RGB</a>
+            </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Pros</th>
+                <th>Contras</th>
+            </tr>
+            <tr>
+                <td>NZXT H6 Flow</td>
+                <td>Buen flujo de aire, RGB integrado</td>
+                <td>Poca capacidad para radiadores grandes</td>
+            </tr>
+            <tr>
+                <td>Lian Li O11D EVO</td>
+                <td>Espacio para refrigeración líquida, excelente diseño</td>
+                <td>Precio más alto, más grande</td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>
+
