@@ -3,184 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Componentes de PC</title>
+<title>Componentes de un PC</title>
+
 <style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d1117;
-    color: #c9d1d9;
-    margin: 0;
-    padding: 20px;
-}
-h1 {
-    text-align: center;
-    color: #58a6ff;
-}
-section {
-    background-color: #161b22;
-    border-left: 5px solid #1f6feb;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 10px;
-}
-h2 {
-    color: #1f6feb;
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    background-color: #0d1117;
-    padding: 10px;
-    border-radius: 5px;
-    transition: transform 0.2s, background-color 0.2s;
-}
-li:hover {
-    transform: scale(1.02);
-    background-color: #21262d;
-}
-li img {
-    width: 150px;
-    margin-right: 15px;
-    border-radius: 5px;
-    border: 1px solid #1f6feb;
-}
-li a {
-    color: #58a6ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-li a:hover {
-    text-decoration: underline;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-th, td {
-    border: 1px solid #1f6feb;
-    padding: 8px;
-    text-align: left;
-}
-th {
-    background-color: #1f6feb;
-    color: #0d1117;
-}
-tr:nth-child(even) {
-    background-color: #21262d;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0d1117;
+        color: #c9d1d9;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #58a6ff;
+        margin-bottom: 40px;
+    }
+
+    section {
+        background-color: #161b22;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        border-left: 5px solid #1f6feb;
+        box-shadow: 0 0 10px #1f6feb55;
+    }
+
+    h2 {
+        color: #58a6ff;
+        border-bottom: 1px solid #1f6feb;
+        padding-bottom: 5px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        background: #0d1117;
+        border: 1px solid #1f6feb;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .item:hover {
+        transform: scale(1.03);
+        background-color: #21262d;
+    }
+
+    .item img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 10px;
+        border: 1px solid #1f6feb;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th, td {
+        border: 1px solid #1f6feb;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #1f6feb;
+        color: #0d1117;
+    }
+
+    tr:nth-child(even) {
+        background-color: #21262d;
+    }
 </style>
 </head>
+
 <body>
-<h1>Componentes de PC</h1>
 
-<section id="fuente">
-<h2>Fuente de Alimentación</h2>
-<ul>
-<li><img src="fuente1.png" alt="Fuente 1"><a href="#">Fuente 1</a></li>
-<li><img src="fuente2.png" alt="Fuente 2"><a href="#">Fuente 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>Fuente 1</td><td>Silenciosa, modular</td><td>Precio alto</td></tr>
-<tr><td>Fuente 2</td><td>Buena disponibilidad</td><td>Ventilador ruidoso</td></tr>
-</table>
+<h1>Componentes de un PC</h1>
+
+<!-- FUENTE -->
+<section>
+    <h2>Fuentes de Alimentación</h2>
+
+    <div class="item">
+        <img src="fuente1.png">
+        <p><b>Fuente 1</b> — buena calidad y silenciosa.</p>
+    </div>
+
+    <div class="item">
+        <img src="fuente2.png">
+        <p><b>Fuente 2</b> — económica y eficiente.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>Fuente 1</td><td>Silenciosa, modular</td><td>Precio alto</td></tr>
+        <tr><td>Fuente 2</td><td>Económica</td><td>Menos silenciosa</td></tr>
+    </table>
 </section>
 
-<section id="placa">
-<h2>Placa Base</h2>
-<ul>
-<li><img src="placa1.png" alt="Placa 1"><a href="#">Placa 1</a></li>
-<li><img src="placa2.png" alt="Placa 2"><a href="#">Placa 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>Placa 1</td><td>Compatible con Ryzen</td><td>No Intel</td></tr>
-<tr><td>Placa 2</td><td>Compatible Intel</td><td>No overclock</td></tr>
-</table>
+<!-- PLACAS -->
+<section>
+    <h2>Placas Base</h2>
+
+    <div class="item">
+        <img src="placa1.png">
+        <p><b>Placa 1</b> — buena para gaming.</p>
+    </div>
+
+    <div class="item">
+        <img src="placa2.png">
+        <p><b>Placa 2</b> — excelente conectividad.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>Placa 1</td><td>Alta calidad</td><td>Precio elevado</td></tr>
+        <tr><td>Placa 2</td><td>Muchos puertos</td><td>No soporta OC</td></tr>
+    </table>
 </section>
 
-<section id="grafica">
-<h2>Tarjeta Gráfica</h2>
-<ul>
-<li><img src="grafica1.png" alt="Gráfica 1"><a href="#">Gráfica 1</a></li>
-<li><img src="grafica2.png" alt="Gráfica 2"><a href="#">Gráfica 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>Gráfica 1</td><td>Buen rendimiento</td><td>Grande</td></tr>
-<tr><td>Gráfica 2</td><td>Compacta</td><td>Menor refrigeración</td></tr>
-</table>
+<!-- GPU -->
+<section>
+    <h2>Tarjetas Gráficas</h2>
+
+    <div class="item">
+        <img src="grafica1.png">
+        <p><b>Gráfica 1</b> — alto rendimiento.</p>
+    </div>
+
+    <div class="item">
+        <img src="grafica2.png">
+        <p><b>Gráfica 2</b> — buena relación calidad/precio.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>Gráfica 1</td><td>Gran potencia</td><td>Gran tamaño</td></tr>
+        <tr><td>Gráfica 2</td><td>Eficiente</td><td>Menos VRAM</td></tr>
+    </table>
 </section>
 
-<section id="ram">
-<h2>RAM</h2>
-<ul>
-<li><img src="ram1.png" alt="RAM 1"><a href="#">RAM 1</a></li>
-<li><img src="ram2.png" alt="RAM 2"><a href="#">RAM 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>RAM 1</td><td>Buena compatibilidad</td><td>Precio alto</td></tr>
-<tr><td>RAM 2</td><td>Económica</td><td>Poca información</td></tr>
-</table>
+<!-- RAM -->
+<section>
+    <h2>Memoria RAM</h2>
+
+    <div class="item">
+        <img src="ram1.png">
+        <p><b>RAM 1</b> — rápida y estable.</p>
+    </div>
+
+    <div class="item">
+        <img src="ram2.png">
+        <p><b>RAM 2</b> — excelente precio.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>RAM 1</td><td>Rápida</td><td>Cara</td></tr>
+        <tr><td>RAM 2</td><td>Barata</td><td>Menos frecuencia</td></tr>
+    </table>
 </section>
 
-<section id="cooler">
-<h2>Ventilador / Cooler</h2>
-<ul>
-<li><img src="cooler1.png" alt="Cooler 1"><a href="#">Cooler 1</a></li>
-<li><img src="cooler2.png" alt="Cooler 2"><a href="#">Cooler 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>Cooler 1</td><td>Buen precio y rendimiento</td><td>Algo ruidoso</td></tr>
-<tr><td>Cooler 2</td><td>Silencioso</td><td>Precio alto</td></tr>
-</table>
+<!-- COOLER -->
+<section>
+    <h2>Ventiladores / Refrigeración</h2>
+
+    <div class="item">
+        <img src="cooler1.png">
+        <p><b>Cooler 1</b> — silencioso y eficiente.</p>
+    </div>
+
+    <div class="item">
+        <img src="cooler2.png">
+        <p><b>Cooler 2</b> — excelente rendimiento térmico.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>Cooler 1</td><td>Silencioso</td><td>Mediano rendimiento</td></tr>
+        <tr><td>Cooler 2</td><td>Muy eficiente</td><td>Más caro</td></tr>
+    </table>
 </section>
 
-<section id="audio">
-<h2>Tarjeta de Audio</h2>
-<ul>
-<li><img src="audio1.png" alt="Audio 1"><a href="#">Audio 1</a></li>
-<li><img src="audio2.png" alt="Audio 2"><a href="#">Audio 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>Audio 1</td><td>Fácil de usar</td><td>Pocas entradas</td></tr>
-<tr><td>Audio 2</td><td>Automix inteligente</td><td>No tan robusta</td></tr>
-</table>
+<!-- AUDIO -->
+<section>
+    <h2>Tarjetas de Sonido</h2>
+
+    <div class="item">
+        <img src="audio1.png">
+        <p><b>Audio 1</b> — simple y funcional.</p>
+    </div>
+
+    <div class="item">
+        <img src="audio2.png">
+        <p><b>Audio 2</b> — calidad profesional.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>Audio 1</td><td>Fácil de usar</td><td>Pocas entradas</td></tr>
+        <tr><td>Audio 2</td><td>Audio excelente</td><td>Cara</td></tr>
+    </table>
 </section>
 
-<section id="ssd">
-<h2>SSD / Disco Duro</h2>
-<ul>
-<li><img src="ssd1.png" alt="SSD 1"><a href="#">SSD 1</a></li>
-<li><img src="ssd2.png" alt="SSD 2"><a href="#">SSD 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>SSD 1</td><td>Velocidad alta</td><td>Precio alto</td></tr>
-<tr><td>SSD 2</td><td>Portátil</td><td>Velocidad menor</td></tr>
-</table>
+<!-- SSD -->
+<section>
+    <h2>Almacenamiento (SSD)</h2>
+
+    <div class="item">
+        <img src="ssd1.png">
+        <p><b>SSD 1</b> — muy rápido.</p>
+    </div>
+
+    <div class="item">
+        <img src="ssd2.png">
+        <p><b>SSD 2</b> — portátil y práctico.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>SSD 1</td><td>Alta velocidad</td><td>Precio elevado</td></tr>
+        <tr><td>SSD 2</td><td>Ligero</td><td>Más lento</td></tr>
+    </table>
 </section>
 
-<section id="caja">
-<h2>Caja</h2>
-<ul>
-<li><img src="caja1.png" alt="Caja 1"><a href="#">Caja 1</a></li>
-<li><img src="caja2.png" alt="Caja 2"><a href="#">Caja 2</a></li>
-</ul>
-<table>
-<tr><th>Componente</th><th>Pros</th><th>Contras</th></tr>
-<tr><td>Caja 1</td><td>Buen flujo de aire</td><td>Poca capacidad para radiadores</td></tr>
-<tr><td>Caja 2</td><td>Espacio para refrigeración líquida</td><td>Más cara</td></tr>
-</table>
+<!-- CAJA -->
+<section>
+    <h2>Cajas</h2>
+
+    <div class="item">
+        <img src="caja1.png">
+        <p><b>Caja 1</b> — flujo de aire excelente.</p>
+    </div>
+
+    <div class="item">
+        <img src="caja2.png">
+        <p><b>Caja 2</b> — elegante y espaciosa.</p>
+    </div>
+
+    <table>
+        <tr><th>Modelo</th><th>Pros</th><th>Contras</th></tr>
+        <tr><td>Caja 1</td><td>Buen flujo</td><td>Poco espacio interno</td></tr>
+        <tr><td>Caja 2</td><td>Amplia</td><td>Más cara</td></tr>
+    </table>
 </section>
 
 </body>
